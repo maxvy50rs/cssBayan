@@ -1,0 +1,1 @@
+This is not original repo and it was made to meet RSS requirements. I faced some problems with merge base in original one, so dates in commit messages not equal to actual commit dates :/
