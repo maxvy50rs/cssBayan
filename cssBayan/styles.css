@@ -1,5 +1,30 @@
-.container {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background-color: #ccc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.options {
+    width: 70%;
+    padding: 30px;
+    list-style: none;
+}
+
+.option {
+
+    border-top: #666 1px solid;
+    padding: 10px 0;
+}
+
+.option>img {
+    width: 400px;
 }
