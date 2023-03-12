@@ -18,7 +18,7 @@ h1 {
 }
 
 .options {
-    width: 80%;
+    width: 70%;
     padding: 1em 2em;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
     display: flex;
@@ -38,16 +38,17 @@ input {
 
 label {
     position: relative;
-    width: 100%;
     padding: 1em;
     cursor: pointer;
-    color:rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 label:hover {
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
 }
-
 
 label::after {
     position: absolute;
@@ -57,13 +58,12 @@ label::after {
 }
 
 label img {
+    align-self: center;
     max-height: 0em;
-    padding: 0 1em;
 }
 
 label:hover img,
 label:has(input[type="radio"]:checked) img {
-    display: block;
     max-height: 100vh;
     width: 400px;
     transition: all 1.5s;
@@ -71,7 +71,7 @@ label:has(input[type="radio"]:checked) img {
 
 label:has(input[type="radio"]:checked) {
     color: black;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 label:hover::after,
